@@ -1,0 +1,3 @@
+Infill: 50%
+Boarder: 70%
+Boarder Dashes: 80%
