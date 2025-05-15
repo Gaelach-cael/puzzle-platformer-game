@@ -1,0 +1,1 @@
+This is a puzzle platformer based around low level logic gates, only AND, NOT, & OR will be implemented for now, as all the other logic gates are just combinations of the three above(with some buffers in specific places so that time flows linearly)
