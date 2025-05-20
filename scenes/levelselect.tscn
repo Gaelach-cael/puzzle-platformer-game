@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3 uid="uid://dluoj1qtgagyg"]
+
+[ext_resource type="Theme" uid="uid://b1o5e13xqnnd" path="res://theme/Light Mode.tres" id="1_h6037"]
+
+[node name="Levelselect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_vertical_guides_ = [960.0]
+
+[node name="level 1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 790.0
+offset_top = 160.0
+offset_right = 1132.0
+offset_bottom = 305.0
+theme = ExtResource("1_h6037")
+text = "Level 1"
+
+[node name="level 2(unimplemented)" type="Button" parent="."]
+layout_mode = 0
+offset_left = 790.0
+offset_top = 370.0
+offset_right = 1132.0
+offset_bottom = 515.0
+theme = ExtResource("1_h6037")
+text = "Level 2"
+
+[node name="level 3(unimplemented)" type="Button" parent="."]
+layout_mode = 0
+offset_left = 790.0
+offset_top = 580.0
+offset_right = 1132.0
+offset_bottom = 725.0
+theme = ExtResource("1_h6037")
+text = "Level 3"
+
+[node name="Theme" type="MenuButton" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+theme = ExtResource("1_h6037")
+text = "menu theme
+"
