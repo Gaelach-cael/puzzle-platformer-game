@@ -19,4 +19,5 @@ sources/2 = SubResource("TileSetAtlasSource_7ir1o")
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray(0, 0, 0, 0, 2, 0, 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 5, 0, 2, 0, 1, 0, 2, 0, 0, 0, 6, 0, 5, 0, 2, 0, 1, 0, 2, 0, 0, 0)
 tile_set = SubResource("TileSet_0xwjf")

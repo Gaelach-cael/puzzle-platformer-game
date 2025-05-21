@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://6lq6euynokya"]
+
+[ext_resource type="Texture2D" uid="uid://dv2v8q1n5516o" path="res://assets/tiles/tileset screen 1.png" id="1_ewdw8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5lqx8"]
+atlas = ExtResource("1_ewdw8")
+region = Rect2(32, 0, 16, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r8ysf"]
+atlas = ExtResource("1_ewdw8")
+region = Rect2(48, 0, 16, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ug4iw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5lqx8")
+}],
+"loop": true,
+"name": &"off",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r8ysf")
+}],
+"loop": true,
+"name": &"on",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aehms"]
+size = Vector2(16, 8)
+
+[node name="breakawayfloor" type="CharacterBody2D"]
+
+[node name="CharacterBody2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ug4iw")
+animation = &"off"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_aehms")
