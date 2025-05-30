@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=4 uid="uid://dq6yl8om5pm8r"]
+[gd_scene load_steps=6 format=4 uid="uid://dq6yl8om5pm8r"]
 
 [ext_resource type="Texture2D" uid="uid://dv2v8q1n5516o" path="res://assets/tiles/tileset screen 1.png" id="1_p6jks"]
 [ext_resource type="PackedScene" uid="uid://6lq6euynokya" path="res://scenes/breakawayfloor.tscn" id="2_34y3y"]
+[ext_resource type="PackedScene" uid="uid://ilhqnnxkebqe" path="res://scenes/UFO.tscn" id="3_e7n0w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2uair"]
 resource_name = "screen 1"
@@ -35,3 +36,6 @@ scale = Vector2(2, 2)
 [node name="Floor B" parent="." instance=ExtResource("2_34y3y")]
 position = Vector2(240, 136)
 scale = Vector2(2, 2)
+
+[node name="UFO" parent="." instance=ExtResource("3_e7n0w")]
+position = Vector2(24, 120)
