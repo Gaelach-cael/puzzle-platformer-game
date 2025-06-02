@@ -8,6 +8,7 @@ func _process(_delta: float):
 	#these functions control animations
 	if Input.is_action_pressed("crouch"):
 		_animated_sprite.play("Crouch start")
+		_animated_sprite.set_frame_and_progress(1, 0.0)
 	elif Input.is_action_just_released("crouch"):
 		_animated_sprite.play("Crouch end")
 	elif Input.is_action_pressed("left"):
