@@ -3,6 +3,14 @@
 [ext_resource type="Texture2D" uid="uid://bhe2qd8hrtqex" path="res://assets/tiles/player_character.png" id="1_7h4pv"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_l0otm"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_djrox"]
+atlas = ExtResource("1_7h4pv")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e647j"]
+atlas = ExtResource("1_7h4pv")
+region = Rect2(48, 16, 16, 16)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_rctj5"]
 atlas = ExtResource("1_7h4pv")
 region = Rect2(0, 16, 16, 16)
@@ -10,14 +18,6 @@ region = Rect2(0, 16, 16, 16)
 [sub_resource type="AtlasTexture" id="AtlasTexture_ulgji"]
 atlas = ExtResource("1_7h4pv")
 region = Rect2(16, 16, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0j4pj"]
-atlas = ExtResource("1_7h4pv")
-region = Rect2(32, 16, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xkfmp"]
-atlas = ExtResource("1_7h4pv")
-region = Rect2(48, 16, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ydk0w"]
 atlas = ExtResource("1_7h4pv")
@@ -55,19 +55,24 @@ region = Rect2(48, 0, 16, 16)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_djrox")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e647j")
+}],
+"loop": true,
+"name": &"Crouch end",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_rctj5")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ulgji")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0j4pj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xkfmp")
 }],
-"loop": true,
-"name": &"Crouch",
+"loop": false,
+"name": &"Crouch start",
 "speed": 10.0
 }, {
 "frames": [{
@@ -113,7 +118,7 @@ script = ExtResource("1_l0otm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_hljan")
-animation = &"Crouch"
+animation = &"Crouch end"
 autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
