@@ -13,5 +13,5 @@ Label/colors/font_color = Color(0.0862745, 0.572549, 0, 1)
 Label/colors/font_outline_color = Color(0, 0.113725, 0, 1)
 Label/colors/font_shadow_color = Color(0, 0, 0, 0)
 Label/constants/outline_size = 6
-Label/font_sizes/font_size = 17
+Label/font_sizes/font_size = 20
 Label/styles/normal = null

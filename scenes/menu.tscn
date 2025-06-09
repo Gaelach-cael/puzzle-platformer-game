@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cddc2tyq7mquy"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_ss3bi"]
-[ext_resource type="Theme" uid="uid://b1o5e13xqnnd" path="res://theme/Light Mode.tres" id="1_tabel"]
+[ext_resource type="Theme" uid="uid://b1o5e13xqnnd" path="res://theme/Menu.tres" id="2_lcfld"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -24,12 +24,12 @@ anchor_left = 0.052
 anchor_top = 0.237
 anchor_right = 0.931
 anchor_bottom = 0.454
-offset_left = 6.28
-offset_top = 0.119995
-offset_right = -155.16
-offset_bottom = -25.96
+offset_left = -11.668
+offset_top = 1.59399
+offset_right = -155.229
+offset_bottom = -22.052
 scale = Vector2(2, 2)
-theme = ExtResource("1_tabel")
+theme = ExtResource("2_lcfld")
 text = "Boolean Eccentric"
 
 [node name="subtitle" type="Label" parent="."]
@@ -39,10 +39,10 @@ anchor_left = 0.197
 anchor_top = 0.512
 anchor_right = 0.789
 anchor_bottom = 0.629
-offset_left = 0.0799942
-offset_top = 0.119995
-offset_right = 3.95999
-offset_bottom = 0.0399933
-theme = ExtResource("1_tabel")
+offset_left = -1.72301
+offset_top = -0.856003
+offset_right = 2.15698
+offset_bottom = -0.701996
+theme = ExtResource("2_lcfld")
 text = "Press Start"
 horizontal_alignment = 1

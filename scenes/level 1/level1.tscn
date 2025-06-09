@@ -43,3 +43,10 @@ scale = Vector2(2, 2)
 [node name="UFO" parent="." instance=ExtResource("3_ylp4s")]
 position = Vector2(24, 120)
 script = ExtResource("4_4a8pn")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 70.0
+offset_top = 52.0
+offset_right = 279.0
+offset_bottom = 75.0
+text = "Press tab to switch screens"
