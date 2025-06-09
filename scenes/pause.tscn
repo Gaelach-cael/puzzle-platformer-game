@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://bi8h1vfhrh8fd"]
+
+[ext_resource type="Theme" uid="uid://b1o5e13xqnnd" path="res://theme/Light Mode.tres" id="1_mqmma"]
+[ext_resource type="Script" path="res://scripts/pause.gd" id="1_qmdf3"]
+
+[node name="Pause" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qmdf3")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 25.0
+offset_right = 193.0
+offset_bottom = 49.0
+scale = Vector2(1.5, 1.5)
+theme = ExtResource("1_mqmma")
+text = "Paused"
+
+[node name="cont" type="Button" parent="."]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 78.0
+offset_right = 237.0
+offset_bottom = 121.0
+theme = ExtResource("1_mqmma")
+text = "Continue"
+
+[node name="ret->Lselect" type="Button" parent="."]
+layout_mode = 0
+offset_left = 41.0
+offset_top = 127.0
+offset_right = 311.0
+offset_bottom = 170.0
+theme = ExtResource("1_mqmma")
+text = "Return to Level Select"
+
+[node name="ret->Menu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 176.0
+offset_right = 279.0
+offset_bottom = 219.0
+theme = ExtResource("1_mqmma")
+text = "Return to Menu
+"
+
+[connection signal="pressed" from="cont" to="." method="_on_cont_pressed"]
+[connection signal="pressed" from="ret->Lselect" to="." method="_on_ret_lselect_pressed"]
+[connection signal="pressed" from="ret->Menu" to="." method="_on_ret_menu_pressed"]

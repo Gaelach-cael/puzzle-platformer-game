@@ -1,18 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://cddc2tyq7mquy"]
+[gd_scene load_steps=3 format=3 uid="uid://cddc2tyq7mquy"]
 
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_ss3bi"]
 [ext_resource type="Theme" uid="uid://b1o5e13xqnnd" path="res://theme/Light Mode.tres" id="1_tabel"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
-anchors_preset = 15
+anchor_left = 0.003
 anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 4.0
-offset_top = -4.0
-offset_right = 4.0
-offset_bottom = -4.0
+anchor_bottom = 0.996
+offset_left = -0.08
+offset_top = 1.0
+offset_bottom = -0.0400085
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ss3bi")
 metadata/_edit_horizontal_guides_ = [540.0]
 metadata/_edit_vertical_guides_ = [960.0]
 
@@ -20,13 +21,13 @@ metadata/_edit_vertical_guides_ = [960.0]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.052
-anchor_top = 0.278
-anchor_right = 0.945
-anchor_bottom = 0.531
-offset_left = 0.159996
-offset_top = -0.240021
-offset_right = -857.4
-offset_bottom = -136.48
+anchor_top = 0.237
+anchor_right = 0.931
+anchor_bottom = 0.454
+offset_left = 6.28
+offset_top = 0.119995
+offset_right = -155.16
+offset_bottom = -25.96
 scale = Vector2(2, 2)
 theme = ExtResource("1_tabel")
 text = "Boolean Eccentric"
@@ -34,13 +35,14 @@ text = "Boolean Eccentric"
 [node name="subtitle" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.184
-anchor_top = 0.5
-anchor_right = 0.811
-anchor_bottom = 0.63
-offset_left = 0.719971
-offset_top = 3.0
-offset_right = -0.120117
-offset_bottom = -0.400085
+anchor_left = 0.197
+anchor_top = 0.512
+anchor_right = 0.789
+anchor_bottom = 0.629
+offset_left = 0.0799942
+offset_top = 0.119995
+offset_right = 3.95999
+offset_bottom = 0.0399933
 theme = ExtResource("1_tabel")
-text = "Press any button to Start"
+text = "Press Start"
+horizontal_alignment = 1

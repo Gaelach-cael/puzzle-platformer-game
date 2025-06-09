@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dluoj1qtgagyg"]
+[gd_scene load_steps=3 format=3 uid="uid://dluoj1qtgagyg"]
 
+[ext_resource type="Script" path="res://scripts/levelselect.gd" id="1_3hevu"]
 [ext_resource type="Theme" uid="uid://b1o5e13xqnnd" path="res://theme/Light Mode.tres" id="1_h6037"]
 
 [node name="Levelselect" type="Control"]
@@ -9,39 +10,44 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_3hevu")
 metadata/_edit_vertical_guides_ = [960.0]
 
 [node name="level 1" type="Button" parent="."]
-layout_mode = 0
-offset_left = 790.0
-offset_top = 160.0
-offset_right = 1132.0
-offset_bottom = 305.0
+offset_left = 130.0
+offset_top = 48.0
+offset_right = 225.0
+offset_bottom = 92.0
 theme = ExtResource("1_h6037")
 text = "Level 1"
 
 [node name="level 2(unimplemented)" type="Button" parent="."]
-layout_mode = 0
-offset_left = 790.0
-offset_top = 370.0
-offset_right = 1132.0
-offset_bottom = 515.0
+offset_left = 130.0
+offset_top = 98.0
+offset_right = 225.0
+offset_bottom = 142.0
 theme = ExtResource("1_h6037")
 text = "Level 2"
 
 [node name="level 3(unimplemented)" type="Button" parent="."]
-layout_mode = 0
-offset_left = 790.0
-offset_top = 580.0
-offset_right = 1132.0
-offset_bottom = 725.0
+offset_left = 130.0
+offset_top = 148.0
+offset_right = 225.0
+offset_bottom = 192.0
 theme = ExtResource("1_h6037")
 text = "Level 3"
 
-[node name="Theme" type="MenuButton" parent="."]
+[node name="Theme" type="OptionButton" parent="."]
 layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
+offset_right = 187.0
+offset_bottom = 43.0
+scale = Vector2(0.8, 0.8)
 theme = ExtResource("1_h6037")
-text = "menu theme
-"
+fit_to_longest_item = false
+item_count = 2
+popup/item_0/text = "Dark Mode"
+popup/item_0/separator = true
+popup/item_1/text = "Light Mode"
+popup/item_1/id = 1
+
+[connection signal="pressed" from="level 1" to="." method="_on_level_1_pressed"]
