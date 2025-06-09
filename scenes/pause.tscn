@@ -1,32 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://bi8h1vfhrh8fd"]
+[gd_scene load_steps=3 format=3 uid="uid://bi8h1vfhrh8fd"]
 
+[ext_resource type="Theme" uid="uid://cl8a3sorjk7qm" path="res://theme/pause.tres" id="1_5sbeg"]
 [ext_resource type="Script" path="res://scripts/pause.gd" id="1_qmdf3"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a2s14"]
-bg_color = Color(0.224747, 0.0728, 0.28, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4uljn"]
-bg_color = Color(0.377253, 0.1222, 0.47, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2d47q"]
-bg_color = Color(0.322133, 0.108, 0.4, 1)
-
-[sub_resource type="Theme" id="Theme_4g8kc"]
-Button/colors/font_color = Color(0.80545, 0.5518, 0.89, 1)
-Button/colors/font_focus_color = Color(0.780392, 0.529412, 0.870588, 1)
-Button/colors/font_hover_color = Color(0.780392, 0.529412, 0.870588, 1)
-Button/colors/font_outline_color = Color(0.478183, 0.2535, 0.65, 1)
-Button/colors/font_pressed_color = Color(0.803922, 0.552941, 0.890196, 1)
-Button/constants/outline_size = 6
-Button/font_sizes/font_size = 25
-Button/styles/focus = null
-Button/styles/hover = SubResource("StyleBoxFlat_a2s14")
-Button/styles/normal = SubResource("StyleBoxFlat_4uljn")
-Button/styles/pressed = SubResource("StyleBoxFlat_2d47q")
-HeaderLarge/colors/font_color = Color(0.735467, 0.448, 0.8, 1)
-HeaderLarge/colors/font_outline_color = Color(0.28336, 0.1656, 0.46, 1)
-HeaderLarge/constants/outline_size = 5
-HeaderLarge/font_sizes/font_size = 28
 
 [node name="Pause" type="Control"]
 layout_mode = 3
@@ -35,7 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = SubResource("Theme_4g8kc")
+theme = ExtResource("1_5sbeg")
 script = ExtResource("1_qmdf3")
 
 [node name="Label" type="Label" parent="."]
@@ -45,7 +20,7 @@ offset_top = 12.0
 offset_right = 202.0
 offset_bottom = 51.0
 scale = Vector2(1.5, 1.5)
-theme = SubResource("Theme_4g8kc")
+theme = ExtResource("1_5sbeg")
 theme_type_variation = &"HeaderLarge"
 text = "Paused"
 horizontal_alignment = 1
@@ -57,7 +32,7 @@ offset_left = 119.0
 offset_top = 78.0
 offset_right = 237.0
 offset_bottom = 121.0
-theme = SubResource("Theme_4g8kc")
+theme = ExtResource("1_5sbeg")
 text = "Continue"
 
 [node name="ret->Lselect" type="Button" parent="."]
@@ -66,7 +41,7 @@ offset_left = 41.0
 offset_top = 127.0
 offset_right = 311.0
 offset_bottom = 170.0
-theme = SubResource("Theme_4g8kc")
+theme = ExtResource("1_5sbeg")
 text = "Return to Level Select"
 
 [node name="ret->Menu" type="Button" parent="."]
@@ -75,7 +50,7 @@ offset_left = 81.0
 offset_top = 176.0
 offset_right = 279.0
 offset_bottom = 219.0
-theme = SubResource("Theme_4g8kc")
+theme = ExtResource("1_5sbeg")
 text = "Return to Menu
 "
 

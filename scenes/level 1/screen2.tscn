@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cxu6gso6seova"]
+[gd_scene load_steps=6 format=3 uid="uid://cxu6gso6seova"]
 
 [ext_resource type="Texture2D" uid="uid://3ux8a2txfrv4" path="res://assets/tiles/tileset screen 2.png" id="1_ffmix"]
+[ext_resource type="Script" path="res://scripts/screen_2.gd" id="1_slgnn"]
+[ext_resource type="Theme" uid="uid://cdhcndcrurt4y" path="res://theme/BG.tres" id="2_bp574"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7ir1o"]
 texture = ExtResource("1_ffmix")
@@ -17,13 +19,15 @@ use_texture_padding = false
 sources/2 = SubResource("TileSetAtlasSource_7ir1o")
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_slgnn")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 361.0
+offset_bottom = 240.0
+theme = ExtResource("2_bp574")
+theme_type_variation = &"HeaderMedium"
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 scale = Vector2(3, 3)
 tile_map_data = PackedByteArray(0, 0, 2, 0, 4, 0, 2, 0, 1, 0, 2, 0, 0, 0, 5, 0, 4, 0, 2, 0, 1, 0, 2, 0, 0, 0, 0, 0, 1, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 tile_set = SubResource("TileSet_0xwjf")
-
-[node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
-theme_type_variation = &"HeaderMedium"

@@ -14,3 +14,4 @@ func _process(_delta: float):
 		get_parent().add_child(pause.instantiate())
 	if Input.is_action_pressed("switch"):
 		get_parent().add_child(switch.instantiate())
+		get_tree().paused = true

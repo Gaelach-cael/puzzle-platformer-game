@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cdhcndcrurt4y"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0j5or"]
+bg_color = Color(0, 0, 0, 0.647059)
+
+[resource]
+Label/styles/normal = SubResource("StyleBoxFlat_0j5or")
