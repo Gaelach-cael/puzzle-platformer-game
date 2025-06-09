@@ -13,6 +13,12 @@ grow_vertical = 2
 theme = ExtResource("1_5sbeg")
 script = ExtResource("1_qmdf3")
 
+[node name="bg" type="Label" parent="."]
+layout_mode = 0
+offset_right = 359.0
+offset_bottom = 239.0
+theme = ExtResource("1_5sbeg")
+
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
 offset_left = 104.0

@@ -1,13 +1,28 @@
-[gd_resource type="Theme" load_steps=4 format=3 uid="uid://cl8a3sorjk7qm"]
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://cl8a3sorjk7qm"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a2s14"]
 bg_color = Color(0.224747, 0.0728, 0.28, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4uljn"]
 bg_color = Color(0.377253, 0.1222, 0.47, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2d47q"]
 bg_color = Color(0.322133, 0.108, 0.4, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_83pl8"]
+bg_color = Color(0.28896, 0.0936, 0.36, 0.243137)
 
 [resource]
 Button/colors/font_color = Color(0.80545, 0.5518, 0.89, 1)
@@ -25,3 +40,4 @@ HeaderLarge/colors/font_color = Color(0.735467, 0.448, 0.8, 1)
 HeaderLarge/colors/font_outline_color = Color(0.28336, 0.1656, 0.46, 1)
 HeaderLarge/constants/outline_size = 5
 HeaderLarge/font_sizes/font_size = 28
+Label/styles/normal = SubResource("StyleBoxFlat_83pl8")
