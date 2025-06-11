@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://dmbmaqjf7i14c"]
+
+[ext_resource type="FontFile" uid="uid://p7fsq5iyjvsr" path="res://fonts/pixel.ttf" id="1_g8b5h"]
+
+[resource]
+Label/font_sizes/font_size = 18
+Label/fonts/font = ExtResource("1_g8b5h")

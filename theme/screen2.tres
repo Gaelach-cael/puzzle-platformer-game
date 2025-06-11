@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://b48fdj25th3xi"]
+
+[ext_resource type="FontFile" uid="uid://p7fsq5iyjvsr" path="res://fonts/pixel.ttf" id="1_n4js0"]
+
+[resource]
+Label/font_sizes/font_size = 6
+Label/fonts/font = ExtResource("1_n4js0")

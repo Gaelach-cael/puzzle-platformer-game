@@ -21,29 +21,32 @@ offset_bottom = 240.0
 theme = ExtResource("2_vit10")
 
 [node name="level 1" type="Button" parent="."]
-offset_left = 130.0
-offset_top = 48.0
-offset_right = 225.0
-offset_bottom = 92.0
+layout_mode = 0
+offset_left = 105.0
+offset_top = 49.0
+offset_right = 261.0
+offset_bottom = 93.0
 theme = ExtResource("2_vit10")
-text = "Level 1"
+text = "LEVEL 1"
 
 [node name="level 2(unimplemented)" type="Button" parent="."]
-offset_left = 130.0
+layout_mode = 0
+offset_left = 105.0
 offset_top = 98.0
-offset_right = 225.0
+offset_right = 261.0
 offset_bottom = 142.0
 theme = ExtResource("2_vit10")
 disabled = true
-text = "Level 2"
+text = "LEVEL 2"
 
 [node name="level 3(unimplemented)" type="Button" parent="."]
-offset_left = 130.0
+layout_mode = 0
+offset_left = 105.0
 offset_top = 148.0
-offset_right = 225.0
+offset_right = 261.0
 offset_bottom = 192.0
 theme = ExtResource("2_vit10")
 disabled = true
-text = "Level 3"
+text = "LEVEL 3"
 
 [connection signal="pressed" from="level 1" to="." method="_on_level_1_pressed"]

@@ -1,4 +1,6 @@
-[gd_resource type="Theme" load_steps=6 format=3 uid="uid://cm8i1r4e3tsvl"]
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://cm8i1r4e3tsvl"]
+
+[ext_resource type="FontFile" uid="uid://p7fsq5iyjvsr" path="res://fonts/pixel.ttf" id="1_6em6x"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xg34y"]
 bg_color = Color(0.0133455, 0.15719, 0.152179, 1)
@@ -41,8 +43,10 @@ Button/colors/font_outline_color = Color(0.356863, 0.309804, 0.207843, 0.811765)
 Button/colors/font_pressed_color = Color(0.768627, 0.654902, 0.360784, 1)
 Button/constants/outline_size = 8
 Button/font_sizes/font_size = 24
+Button/fonts/font = ExtResource("1_6em6x")
 Button/styles/disabled = SubResource("StyleBoxFlat_xg34y")
 Button/styles/hover = SubResource("StyleBoxFlat_4g5oq")
 Button/styles/normal = SubResource("StyleBoxFlat_twvcn")
 Button/styles/pressed = SubResource("StyleBoxFlat_p2mpg")
+Label/font_sizes/font_size = 16
 Label/styles/normal = SubResource("StyleBoxFlat_6ceoj")

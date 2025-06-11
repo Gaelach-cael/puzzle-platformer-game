@@ -22,34 +22,34 @@ theme_type_variation = &"HeaderSmall"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 104.0
-offset_top = 12.0
-offset_right = 202.0
-offset_bottom = 51.0
+offset_left = 93.0
+offset_top = 11.0
+offset_right = 213.0
+offset_bottom = 50.0
 scale = Vector2(1.5, 1.5)
 theme = ExtResource("1_5sbeg")
 theme_type_variation = &"HeaderLarge"
-text = "Paused"
+text = "PAUSED"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="cont" type="Button" parent="."]
 layout_mode = 0
-offset_left = 119.0
-offset_top = 78.0
-offset_right = 237.0
-offset_bottom = 121.0
+offset_left = 80.0
+offset_top = 73.0
+offset_right = 282.0
+offset_bottom = 116.0
 theme = ExtResource("1_5sbeg")
-text = "Continue"
+text = "CONTINUE"
 
 [node name="ret->Lselect" type="Button" parent="."]
 layout_mode = 0
-offset_left = 41.0
-offset_top = 127.0
-offset_right = 311.0
-offset_bottom = 170.0
+offset_left = 19.0
+offset_top = 126.0
+offset_right = 352.0
+offset_bottom = 169.0
 theme = ExtResource("1_5sbeg")
-text = "Return to Level Select"
+text = "GOTO LEVEL SELECT"
 
 [node name="ret->Menu" type="Button" parent="."]
 layout_mode = 0
@@ -58,7 +58,7 @@ offset_top = 176.0
 offset_right = 279.0
 offset_bottom = 219.0
 theme = ExtResource("1_5sbeg")
-text = "Return to Menu
+text = "GOTO MENU
 "
 
 [connection signal="pressed" from="cont" to="." method="_on_cont_pressed"]

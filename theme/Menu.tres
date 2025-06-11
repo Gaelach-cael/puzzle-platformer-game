@@ -1,4 +1,6 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://b1o5e13xqnnd"]
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://b1o5e13xqnnd"]
+
+[ext_resource type="FontFile" uid="uid://p7fsq5iyjvsr" path="res://fonts/pixel.ttf" id="1_da6t8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2qvff"]
 bg_color = Color(0.0615, 0.41, 0, 1)
@@ -12,10 +14,13 @@ Button/styles/disabled = null
 Button/styles/focus = null
 Button/styles/hover = null
 Button/styles/normal = null
+HeaderMedium/constants/outline_size = 8
+HeaderMedium/font_sizes/font_size = 36
 HeaderSmall/styles/normal = SubResource("StyleBoxFlat_2qvff")
 Label/colors/font_color = Color(0.0862745, 0.572549, 0, 1)
 Label/colors/font_outline_color = Color(0, 0.113725, 0, 1)
 Label/colors/font_shadow_color = Color(0, 0, 0, 0)
-Label/constants/outline_size = 6
-Label/font_sizes/font_size = 20
+Label/constants/outline_size = 8
+Label/font_sizes/font_size = 30
+Label/fonts/font = ExtResource("1_da6t8")
 Label/styles/normal = null
