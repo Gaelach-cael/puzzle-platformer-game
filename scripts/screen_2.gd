@@ -8,5 +8,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float):
-	if Input.is_action_just_pressed("switch"):
-		pass
+	if Input.is_action_just_pressed("switch") and visible == false:
+		set_visible(true)
+		visible = true
+	elif Input.is_action_just_pressed("switch") and visible == true:
+		set_visible(false)
+		visible = false
