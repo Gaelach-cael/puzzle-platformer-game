@@ -17,6 +17,13 @@ script = ExtResource("1_ss3bi")
 metadata/_edit_horizontal_guides_ = [540.0]
 metadata/_edit_vertical_guides_ = [960.0]
 
+[node name="BG" type="Label" parent="."]
+layout_mode = 0
+offset_right = 358.0
+offset_bottom = 239.0
+theme = ExtResource("2_lcfld")
+theme_type_variation = &"HeaderSmall"
+
 [node name="title" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1

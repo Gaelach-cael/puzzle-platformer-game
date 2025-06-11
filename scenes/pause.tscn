@@ -18,6 +18,7 @@ layout_mode = 0
 offset_right = 359.0
 offset_bottom = 239.0
 theme = ExtResource("1_5sbeg")
+theme_type_variation = &"HeaderSmall"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0

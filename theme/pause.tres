@@ -21,8 +21,8 @@ corner_radius_top_right = 4
 corner_radius_bottom_right = 4
 corner_radius_bottom_left = 4
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_83pl8"]
-bg_color = Color(0.28896, 0.0936, 0.36, 0.243137)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w38mp"]
+bg_color = Color(0.192, 0.0325, 0.25, 0.443137)
 
 [resource]
 Button/colors/font_color = Color(0.80545, 0.5518, 0.89, 1)
@@ -40,4 +40,4 @@ HeaderLarge/colors/font_color = Color(0.735467, 0.448, 0.8, 1)
 HeaderLarge/colors/font_outline_color = Color(0.28336, 0.1656, 0.46, 1)
 HeaderLarge/constants/outline_size = 5
 HeaderLarge/font_sizes/font_size = 28
-Label/styles/normal = SubResource("StyleBoxFlat_83pl8")
+HeaderSmall/styles/normal = SubResource("StyleBoxFlat_w38mp")
