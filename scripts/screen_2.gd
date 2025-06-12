@@ -1,5 +1,8 @@
 extends Node2D
 
+var osc_not = bool
+var not_a = bool
+var not_b = bool
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
