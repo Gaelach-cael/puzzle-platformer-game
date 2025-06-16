@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://dy1p1fdjvhbol"]
+
+[ext_resource type="Theme" uid="uid://cl8a3sorjk7qm" path="res://theme/pause.tres" id="1_ifycx"]
+[ext_resource type="Script" path="res://scripts/winscreen.gd" id="2_n23k2"]
+
+[node name="Pause" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ifycx")
+script = ExtResource("2_n23k2")
+
+[node name="bg" type="Label" parent="."]
+layout_mode = 0
+offset_right = 359.0
+offset_bottom = 239.0
+theme = ExtResource("1_ifycx")
+theme_type_variation = &"HeaderSmall"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 11.0
+offset_right = 220.0
+offset_bottom = 50.0
+scale = Vector2(1.5, 1.5)
+theme = ExtResource("1_ifycx")
+theme_type_variation = &"HeaderLarge"
+text = "YOU WIN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ret->Lselect" type="Button" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 98.0
+offset_right = 348.0
+offset_bottom = 141.0
+theme = ExtResource("1_ifycx")
+text = "GOTO LEVEL SELECT"
+
+[node name="ret->Menu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 165.0
+offset_right = 277.0
+offset_bottom = 208.0
+theme = ExtResource("1_ifycx")
+text = "GOTO MENU
+"
+
+[connection signal="pressed" from="ret->Lselect" to="." method="_on_ret_lselect_pressed"]
+[connection signal="pressed" from="ret->Menu" to="." method="_on_ret_menu_pressed"]
