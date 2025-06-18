@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://6lq6euynokya"]
 
 [ext_resource type="Texture2D" uid="uid://dv2v8q1n5516o" path="res://assets/tiles/tileset screen 1.png" id="1_ewdw8"]
-[ext_resource type="Script" path="res://scenes/breakawayfloor.gd" id="1_gfpyd"]
+[ext_resource type="Script" path="res://scripts/breakawayfloor.gd" id="1_idvg5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5lqx8"]
 atlas = ExtResource("1_ewdw8")
@@ -34,7 +34,7 @@ animations = [{
 size = Vector2(16, 8)
 
 [node name="breakawayfloor" type="CharacterBody2D"]
-script = ExtResource("1_gfpyd")
+script = ExtResource("1_idvg5")
 
 [node name="CharacterBody2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ug4iw")
@@ -42,3 +42,10 @@ animation = &"off"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_aehms")
+disabled = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

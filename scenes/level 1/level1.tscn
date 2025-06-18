@@ -36,10 +36,12 @@ position = Vector2(180, 120)
 [node name="Floor A" parent="." instance=ExtResource("2_yba6s")]
 position = Vector2(112, 136)
 scale = Vector2(2, 2)
+script = null
 
 [node name="Floor B" parent="." instance=ExtResource("2_yba6s")]
 position = Vector2(240, 136)
 scale = Vector2(2, 2)
+script = null
 
 [node name="UFO" parent="." instance=ExtResource("3_ylp4s")]
 position = Vector2(24, 120)

@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=3 uid="uid://ilhqnnxkebqe"]
 
 [ext_resource type="Texture2D" uid="uid://bhe2qd8hrtqex" path="res://assets/tiles/player_character.png" id="1_7h4pv"]
-[ext_resource type="Script" path="res://ufo.gd" id="1_crldh"]
+[ext_resource type="Script" path="res://scripts/ufo.gd" id="1_crldh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_djrox"]
 atlas = ExtResource("1_7h4pv")
